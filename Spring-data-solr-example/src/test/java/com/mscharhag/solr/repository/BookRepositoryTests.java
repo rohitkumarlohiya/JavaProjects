@@ -1,4 +1,4 @@
-package com.mscharhag.solr.repository;
+/*package com.mscharhag.solr.repository;
 
 import static com.mscharhag.solr.document.Category.ADVENTURE;
 import static com.mscharhag.solr.document.Category.EDUCATION;
@@ -169,3 +169,4 @@ public class BookRepositoryTests {
 	}
 
 }
+*/
