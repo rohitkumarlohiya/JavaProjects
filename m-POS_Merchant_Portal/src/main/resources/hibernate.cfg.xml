@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+
+<hibernate-configuration>
+	<session-factory>
+
+        <mapping class="com.estel.entity.Bank" />
+        <mapping class="com.estel.entity.BankAccountType" />
+        <mapping class="com.estel.entity.Business" />
+        <mapping class="com.estel.entity.BusinessCategory" />
+        <mapping class="com.estel.entity.BusinessOwnerType" />
+        <mapping class="com.estel.entity.BusinessType" />
+        <mapping class="com.estel.entity.Chargeslip" />
+        <mapping class="com.estel.entity.City" />
+        <mapping class="com.estel.entity.Contactdetail" />
+        <mapping class="com.estel.entity.Country" />
+        <mapping class="com.estel.entity.Device" />
+        <mapping class="com.estel.entity.DeviceOrder" />
+        <mapping class="com.estel.entity.DeviceType" />
+        <mapping class="com.estel.entity.Idproof" />
+        <mapping class="com.estel.entity.Language" />
+        <mapping class="com.estel.entity.Level" />
+        <mapping class="com.estel.entity.Merchant" />
+        <mapping class="com.estel.entity.PasswordRecord" />
+        <mapping class="com.estel.entity.Pin" />
+        <mapping class="com.estel.entity.PinType" />
+        <mapping class="com.estel.entity.Right" />
+        <mapping class="com.estel.entity.Role" />
+        <mapping class="com.estel.entity.RolesRightsDetail" />
+        <mapping class="com.estel.entity.Serial" />
+        <mapping class="com.estel.entity.State" />
+        <mapping class="com.estel.entity.Status" />
+        <mapping class="com.estel.entity.Transaction" />
+        <mapping class="com.estel.entity.TransactionType" />
+        <mapping class="com.estel.entity.User" />
+
+        <mapping class="com.estel.entity.Audittrail" />
+
+    </session-factory>
+
+</hibernate-configuration>

@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<body>
+  <pre>
+Dear ${a1},
+
+Thank you for registering for m-POS Merchant Portal account.
+ 
+Please activate your Merchant Portal account by clicking on the link mentioned below. Upon activating your Merchant Portal account, you would be prompted to change your password; only then the activation process would be completed.
+
+This activation link will expire in 48 hours; upon expiry of activation link you would again need to register yourself.
+
+${a2}
+
+If you do not see a hyperlink to click, please copy and paste the URL mentioned above into your browser address bar.
+
+You will be directed to a confirmation page where you may log in using your registered email address.
+
+If you experience any problems with your account confirmation, please contact Customer Support at support@mpos.com.
+
+If you did not attempt to register on M-POS Portal site or received this email in error, you may simply ignore it.
+
+</pre>
+</body>
+</html>
