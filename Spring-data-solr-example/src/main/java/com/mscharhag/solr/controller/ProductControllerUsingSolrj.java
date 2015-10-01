@@ -26,7 +26,7 @@ public class ProductControllerUsingSolrj {
 	public String doSimpleTextSearch(String text) {
 		try {
 			SolrQuery solrQuery = new SolrQuery();
-			solrQuery.setQuery(text);
+			solrQuery.setQuery("*:*");
 			QueryResponse response = server.query(solrQuery);
 			Gson gson = new Gson();
 			String results = gson.toJson(response.getResults());
