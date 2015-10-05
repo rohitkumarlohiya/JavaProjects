@@ -22,6 +22,7 @@ public class Application {
 	public SolrServer solrServer() {
 		//return new HttpSolrServer("http://localhost:8983/solr");
 		//return new HttpSolrServer("http://solr.r12expert.com:8983/solr/db");
+		//This is for MySql and create table person in mySql under database test
 		return new HttpSolrServer("http://localhost:8983/solr/person");
 	}
 
