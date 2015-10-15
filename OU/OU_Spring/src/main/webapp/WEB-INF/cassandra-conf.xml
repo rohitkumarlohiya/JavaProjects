@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:cassandra="http://www.springframework.org/schema/data/cassandra"
+	xmlns:util="http://www.springframework.org/schema/util" xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:jpa="http://www.springframework.org/schema/data/jpa"
+	xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd
+  http://www.springframework.org/schema/data/cassandra http://www.springframework.org/schema/data/cassandra/spring-cassandra-1.0.xsd
+  http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.2.xsd
+  http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd
+  http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.2.xsd
+  http://www.springframework.org/schema/data/jpa http://www.springframework.org/schema/data/jpa/spring-jpa.xsd">
+
+	<!-- REQUIRED: The Cassandra Cluster -->
+	<cassandra:cluster contact-points="localhost" port="9042" />
+
+	<!-- REQUIRED: The Cassandra Session, built from the Cluster, and attaching 
+		to a keyspace -->
+	<cassandra:session keyspace-name="companydata" />
+
+	<!-- REQUIRED: The Default Cassandra Mapping Context used by CassandraConverter -->
+	<cassandra:mapping />
+
+	<!-- REQUIRED: The Default Cassandra Converter used by CassandraTemplate -->
+	<cassandra:converter />
+
+	<!-- REQUIRED: The Cassandra Template is the building block of all Spring 
+		Data Cassandra -->
+	<cassandra:template id="cassandraTemplate" />
+
+	<!-- OPTIONAL: If you are using Spring Data Cassandra Repositories, add 
+		your base packages to scan here -->
+	<cassandra:repositories base-package="com.beingjavaguys.repository" />
+
+</beans>
