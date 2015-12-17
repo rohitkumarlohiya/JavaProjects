@@ -19,8 +19,9 @@ public class Transaction implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @Id
-    @SequenceGenerator(name="TRANSACTIONS_TRANSACTIONSID_GENERATOR" )
-    @GeneratedValue(strategy=GenerationType.SEQUENCE, generator="TRANSACTIONS_TRANSACTIONSID_GENERATOR")
+//    @SequenceGenerator(name="TRANSACTIONS_TRANSACTIONSID_GENERATOR" )
+//    @GeneratedValue(strategy=GenerationType.SEQUENCE, generator="TRANSACTIONS_TRANSACTIONSID_GENERATOR")
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name="transactions_id")
     private Long transactionsId;
 

@@ -24,8 +24,9 @@ public class Chargeslip implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@SequenceGenerator(name="CHARGESLIP_CHARGESLIPID_GENERATOR" )
-	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="CHARGESLIP_CHARGESLIPID_GENERATOR")
+//	@SequenceGenerator(name="CHARGESLIP_CHARGESLIPID_GENERATOR" )
+//	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="CHARGESLIP_CHARGESLIPID_GENERATOR")
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name="chargeslip_id")
 	private Long chargeslipId;
 

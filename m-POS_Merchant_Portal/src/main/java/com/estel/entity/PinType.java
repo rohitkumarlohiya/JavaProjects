@@ -25,8 +25,9 @@ public class PinType implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@SequenceGenerator(name="PIN_TYPE_PINTYPEID_GENERATOR" )
-	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="PIN_TYPE_PINTYPEID_GENERATOR")
+//	@SequenceGenerator(name="PIN_TYPE_PINTYPEID_GENERATOR" )
+//	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="PIN_TYPE_PINTYPEID_GENERATOR")
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name="pin_type_id")
 	private Long pinTypeId;
 

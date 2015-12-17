@@ -25,8 +25,9 @@ public class Business implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@SequenceGenerator(name="BUSINESS_BUSINESSID_GENERATOR" )
-	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="BUSINESS_BUSINESSID_GENERATOR")
+//	@SequenceGenerator(name="BUSINESS_BUSINESSID_GENERATOR" )
+//	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="BUSINESS_BUSINESSID_GENERATOR")
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name="business_id")
 	private Long businessId;
 

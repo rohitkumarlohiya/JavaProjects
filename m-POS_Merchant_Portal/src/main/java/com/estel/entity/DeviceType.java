@@ -29,8 +29,9 @@ public class DeviceType implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@SequenceGenerator(name="DEVICE_TYPE_DEVICETYPEID_GENERATOR" )
-	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="DEVICE_TYPE_DEVICETYPEID_GENERATOR")
+//	@SequenceGenerator(name="DEVICE_TYPE_DEVICETYPEID_GENERATOR" )
+//	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="DEVICE_TYPE_DEVICETYPEID_GENERATOR")
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name="device_type_id")
 	private Long deviceTypeId;
 

@@ -16,8 +16,9 @@ public class Audittrail implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @Id
-    @SequenceGenerator(name = "AUDITTRAIL_AUDITTRAILID_GENERATOR")
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "AUDITTRAIL_AUDITTRAILID_GENERATOR")
+    //@SequenceGenerator(name = "AUDITTRAIL_AUDITTRAILID_GENERATOR")
+    //@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "AUDITTRAIL_AUDITTRAILID_GENERATOR")
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "audittrail_id")
     private Long audittrailId;
 

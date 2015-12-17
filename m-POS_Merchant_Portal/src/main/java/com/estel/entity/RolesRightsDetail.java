@@ -27,8 +27,9 @@ public class RolesRightsDetail implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@SequenceGenerator(name="ROLES_RIGHTS_DETAIL_ROLESDETAILID_GENERATOR" )
-	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="ROLES_RIGHTS_DETAIL_ROLESDETAILID_GENERATOR")
+//	@SequenceGenerator(name="ROLES_RIGHTS_DETAIL_ROLESDETAILID_GENERATOR" )
+//	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="ROLES_RIGHTS_DETAIL_ROLESDETAILID_GENERATOR")
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name="roles_detail_id")
 	private Long rolesDetailId;
 

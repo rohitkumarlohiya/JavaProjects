@@ -18,8 +18,9 @@ public class Country implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@SequenceGenerator(name="COUNTRY_COUNTRYID_GENERATOR" )
-	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="COUNTRY_COUNTRYID_GENERATOR")
+//	@SequenceGenerator(name="COUNTRY_COUNTRYID_GENERATOR" )
+//	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="COUNTRY_COUNTRYID_GENERATOR")
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name="country_id")
 	private Long countryId;
 

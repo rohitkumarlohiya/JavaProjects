@@ -29,8 +29,9 @@ public class BusinessCategory implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@SequenceGenerator(name="BUSINESS_CATEGORY_BUSINESSCATEGORYID_GENERATOR" )
-	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="BUSINESS_CATEGORY_BUSINESSCATEGORYID_GENERATOR")
+//	@SequenceGenerator(name="BUSINESS_CATEGORY_BUSINESSCATEGORYID_GENERATOR" )
+//	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="BUSINESS_CATEGORY_BUSINESSCATEGORYID_GENERATOR")
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name="business_category_id")
 	private Long businessCategoryId;
 

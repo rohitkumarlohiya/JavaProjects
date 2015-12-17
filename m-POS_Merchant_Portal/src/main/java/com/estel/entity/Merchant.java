@@ -27,8 +27,9 @@ public class Merchant implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@SequenceGenerator(name="MERCHANT_MERCHANTID_GENERATOR" )
-	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="MERCHANT_MERCHANTID_GENERATOR")
+//	@SequenceGenerator(name="MERCHANT_MERCHANTID_GENERATOR" )
+//	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="MERCHANT_MERCHANTID_GENERATOR")
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name="merchant_id")
 	private Long merchantId;
 

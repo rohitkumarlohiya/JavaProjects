@@ -27,8 +27,9 @@ public class DeviceOrder implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@SequenceGenerator(name="DEVICE_ORDER_DEVICEORDERID_GENERATOR" )
-	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="DEVICE_ORDER_DEVICEORDERID_GENERATOR")
+//	@SequenceGenerator(name="DEVICE_ORDER_DEVICEORDERID_GENERATOR" )
+//	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="DEVICE_ORDER_DEVICEORDERID_GENERATOR")
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name="device_order_id")
 	private Long deviceOrderId;
 

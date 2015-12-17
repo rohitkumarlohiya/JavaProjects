@@ -25,8 +25,9 @@ public class Level implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@SequenceGenerator(name="LEVEL_LEVELID_GENERATOR" )
-	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="LEVEL_LEVELID_GENERATOR")
+//	@SequenceGenerator(name="LEVEL_LEVELID_GENERATOR" )
+//	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="LEVEL_LEVELID_GENERATOR")
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name="level_id")
 	private Long levelId;
 

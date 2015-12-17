@@ -27,8 +27,9 @@ public class Language implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@SequenceGenerator(name="LANGUAGE_LANGUAGEID_GENERATOR" )
-	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="LANGUAGE_LANGUAGEID_GENERATOR")
+//	@SequenceGenerator(name="LANGUAGE_LANGUAGEID_GENERATOR" )
+//	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="LANGUAGE_LANGUAGEID_GENERATOR")
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name="language_id")
 	private Long languageId;
 

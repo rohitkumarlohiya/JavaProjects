@@ -40,14 +40,14 @@
 
     <!--For System -->
 
-    <context:property-placeholder location="file:D:\Java Projects\m-POS_Merchant_Portal\opt\estel\mpos\mPOSMerchantPortal\conf\system.properties"/>
+    <context:property-placeholder location="file:F:\JavaProjects\m-POS_Merchant_Portal\opt\estel\mpos\mPOSMerchantPortal\conf\system.properties"/>
 
     <bean id="messageSource" class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
 
         <property name="basenames">
             <list>
-                <value>file:D:\Java Projects\m-POS_Merchant_Portal\opt\estel\mpos\mPOSMerchantPortal\conf\messages</value>
-                <value>file:D:\Java Projects\m-POS_Merchant_Portal\opt\estel\mpos\mPOSMerchantPortal\conf\system</value>
+                <value>file:F:\JavaProjects\m-POS_Merchant_Portal\opt\estel\mpos\mPOSMerchantPortal\conf\messages</value>
+                <value>file:F:\JavaProjects\m-POS_Merchant_Portal\opt\estel\mpos\mPOSMerchantPortal\conf\system</value>
             </list>
         </property>
         <property name="cacheSeconds" value="1"/>

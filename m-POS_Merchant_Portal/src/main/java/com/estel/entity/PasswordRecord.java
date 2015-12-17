@@ -27,8 +27,9 @@ public class PasswordRecord implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@SequenceGenerator(name="PASSWORD_RECORD_PASSWORDRECORDID_GENERATOR" )
-	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="PASSWORD_RECORD_PASSWORDRECORDID_GENERATOR")
+//	@SequenceGenerator(name="PASSWORD_RECORD_PASSWORDRECORDID_GENERATOR" )
+//	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="PASSWORD_RECORD_PASSWORDRECORDID_GENERATOR")
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name="password_record_id")
 	private Long passwordRecordId;
 

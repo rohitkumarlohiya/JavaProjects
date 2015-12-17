@@ -29,8 +29,9 @@ public class Right implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@SequenceGenerator(name="RIGHTS_RIGHTSID_GENERATOR" )
-	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="RIGHTS_RIGHTSID_GENERATOR")
+//	@SequenceGenerator(name="RIGHTS_RIGHTSID_GENERATOR" )
+//	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="RIGHTS_RIGHTSID_GENERATOR")
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name="rights_id")
 	private Long rightsId;
 

@@ -29,8 +29,9 @@ public class BusinessOwnerType implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@SequenceGenerator(name="BUSINESS_OWNER_TYPE_BUSINESSOWNERTYPEID_GENERATOR" )
-	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="BUSINESS_OWNER_TYPE_BUSINESSOWNERTYPEID_GENERATOR")
+//	@SequenceGenerator(name="BUSINESS_OWNER_TYPE_BUSINESSOWNERTYPEID_GENERATOR" )
+//	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="BUSINESS_OWNER_TYPE_BUSINESSOWNERTYPEID_GENERATOR")
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name="business_owner_type_id")
 	private Long businessOwnerTypeId;
 

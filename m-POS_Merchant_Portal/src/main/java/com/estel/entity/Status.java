@@ -19,8 +19,9 @@ public class Status implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@SequenceGenerator(name="STATUS_STATUSID_GENERATOR" )
-	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="STATUS_STATUSID_GENERATOR")
+//	@SequenceGenerator(name="STATUS_STATUSID_GENERATOR" )
+//	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="STATUS_STATUSID_GENERATOR")
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name="status_id")
 	private Long statusId;
 

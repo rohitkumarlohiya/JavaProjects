@@ -25,8 +25,9 @@ public class Bank implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@SequenceGenerator(name="BANK_BANKID_GENERATOR" )
-	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="BANK_BANKID_GENERATOR")
+//	@SequenceGenerator(name="BANK_BANKID_GENERATOR" )
+//	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="BANK_BANKID_GENERATOR")
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name="bank_id")
 	private Long bankId;
 

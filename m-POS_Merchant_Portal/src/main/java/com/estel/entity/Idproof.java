@@ -27,8 +27,9 @@ public class Idproof implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@SequenceGenerator(name="IDPROOF_IDPROOFID_GENERATOR" )
-	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="IDPROOF_IDPROOFID_GENERATOR")
+//	@SequenceGenerator(name="IDPROOF_IDPROOFID_GENERATOR" )
+//	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="IDPROOF_IDPROOFID_GENERATOR")
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name="idproof_id")
 	private Long idproofId;
 

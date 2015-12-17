@@ -22,8 +22,9 @@ public class Serial implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@SequenceGenerator(name="SERIAL_SERIALID_GENERATOR" )
-	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="SERIAL_SERIALID_GENERATOR")
+//	@SequenceGenerator(name="SERIAL_SERIALID_GENERATOR" )
+//	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="SERIAL_SERIALID_GENERATOR")
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name="serial_id")
 	private Long serialId;
 
