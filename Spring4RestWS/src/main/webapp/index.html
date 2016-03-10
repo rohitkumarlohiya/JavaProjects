@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html data-ng-app="gemStore">
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <script type="text/javascript" src="angular.min.js"></script>
+    <script type="text/javascript" src="products.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+  </head>
+
+  <body data-ng-controller="StoreController as store">
+    <!--  Store Header  -->
+    <header>
+      <h1 class="text-center">Flatlander Crafted Gems</h1>
+      <h2 class="text-center">– an Angular store –</h2>
+    </header>
+
+    <!--  Products Container  -->
+    <div class="list-group">
+      <!--  Product Container  -->
+      <div class="list-group-item" data-ng-repeat="product in store.products">
+        <h3>{{product.name}} <em class="pull-right">{{product.price | currency}}</em></h3>
+
+        <!-- Image Gallery  -->
+        <product-gallery></product-gallery>
+
+        <!-- Product Tabs  -->
+        <product-tabs></product-tabs>
+      </div>
+
+    </div>
+    
+    <div>
+    <!--  Review Form -->
+<form name="productForm" data-ng-controller="ProductController as productCtrl" data-ng-submit="addProduct()">
+
+  <!--  Review Form -->
+  <h4>Submit a Product</h4>
+  <fieldset class="form-group">
+    <textarea data-ng-model="newName" class="form-control" placeholder="Name of the product..." title="Product" required="required"></textarea>
+  </fieldset>
+   <fieldset class="form-group">
+    <textarea data-ng-model="newDescription" class="form-control" placeholder="Description of the product..." title="Product" required="required"></textarea>
+  </fieldset>
+  <fieldset class="form-group">
+    <input type="submit" class="btn btn-primary pull-right" value="Submit Product" />
+  </fieldset>
+</form>
+    </div>
+    
+  </body>
+</html>
