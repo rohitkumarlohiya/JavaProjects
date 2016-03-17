@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html data-ng-app>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<div class="container" data-ng-controller="simpleController">
+
+<input type="text" data-ng-model="name" value="rohit"/>
+
+	 <ul>
+	 <li data-ng-repeat="cust in customers">{{cust.name}}-{{cust.state}}</li>
+	 </ul>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</div>
+<script src="Scripts/angular.min.js"></script>
+<script>
+
+
+	function simpleController($scope) {
+		
+		$scope.$watch(name);
+		
+	/* var str = $scope.name;
+	alert(str); */
+		
+		$scope.customers = [ {
+			name : 'Rohit',
+			state : 'TN'
+		}, {
+			name : 'Rohul',
+			state : 'MP'
+		}, {
+			name : 'Arpit',
+			state : 'UP'
+		}, {
+			name : 'Anhurag',
+			state : 'JH'
+		} ];
+	}
+</script>
+</body>
+</html>

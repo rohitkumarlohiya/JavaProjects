@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html data-ng-app>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body data-ng-init="customers=[{name:'Rohit',state:'TN'},{name:'Rohul',state:'MP'},{name:'Arpit',state:'UP'},{name:'Anhurag',state:'JH'}]">
+<div class="container">
+	Name : <input type="text" data-ng-model="name" /> {{name}}
+	
+	<h3>Looping with the re-repeat directive</h3>
+	
+	filter : <input type="text" data-ng-model="filterText" />
+	
+	state :  <input type="text" data-ng-model="stateText" />
+	<ul>
+	<li data-ng-repeat="cust in customers | filter:filterText|orderBy:stateText">{{cust.name}}-{{cust.state}}</li>
+	</ul>
+	 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</div>
+<script src="Scripts/angular.min.js"></script>
+</body>
+</html>
